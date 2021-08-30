@@ -1,0 +1,53 @@
+body{
+    background-color: white;
+    text-align: center;
+    font-family: Comfortaa;
+    color: rgb(109, 94, 128);
+    width: 56%;
+    margin-left: 22%;
+    align-self: center;
+    padding: 0;
+}
+h1{
+    font-family: 'Style Script', cursive;
+    color: rgb(110, 97, 122);
+}
+
+hr {
+    width: 100px;
+    border: none;
+    border-top: dotted;
+    border-width: 8px;
+    border-color: #c2d6d6;
+  }
+.blue{
+    background-color: rgb(231, 225, 247);
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 0;
+}
+.btn{
+    background-color: rgb(137, 119, 161);
+    border-radius:40%;
+    border: 0;
+    color: white;
+    height: 30px;
+    width: 200px;
+}
+.btn:hover{
+    background-color: black;
+    color:rgb(205, 177, 223) ;
+}
+.mid{
+    background-color: rgb(137, 119, 161);
+    margin: 0;
+    color: white;
+}
+.midhead{
+    margin: 0;
+    padding-top: 3%;
+}
+.midpara{
+    margin-bottom: 0;
+    padding-bottom: 3%;
+}
