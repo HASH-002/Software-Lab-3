@@ -1,4 +1,4 @@
-# Assignment 2 - JAVA NATIVE INTERFACE
+# JAVA NATIVE INTERFACE
 ## Installation
 .java and .cpp files are made for every question.\
 The following commands were executed for every question to run the code written:-
