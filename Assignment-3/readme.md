@@ -1,4 +1,4 @@
-# Assignment 2 - JAVA TESTING
+# JAVA TESTING
 ## Installation
 
 Step 1: Download the JUnit jar file\
