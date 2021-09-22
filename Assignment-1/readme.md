@@ -309,5 +309,5 @@ System.out.println(", Branch: " + rs.getString("branch"));
 **Run the program and you will get the required result**
   
 ## Authors
-- BT19CSE035 (Harshini Pillarisetti)
-- BT19CSE036 (Hasan Koser)
+- [@Hasan Koser](https://www.github.com/HASH-002)
+- [@Harshini Pillarisetti](https://github.com/Harshi194)

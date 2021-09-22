@@ -200,5 +200,5 @@ java filename
     ```
 
 ## Authors
-- BT19CSE035 (Harshini Pillarisetti)
-- BT19CSE036 (Hasan Koser)
+- [@Hasan Koser](https://www.github.com/HASH-002)
+- [@Harshini Pillarisetti](https://github.com/Harshi194)

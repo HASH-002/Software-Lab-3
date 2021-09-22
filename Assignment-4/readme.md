@@ -319,6 +319,6 @@
     8. Total Value for the Line Item will automatically generated and will be added to the Total Invoice of the particular region(Invoice).
 
 ## Authors
-- BT19CSE035 (Harshini Pillarisetti)
-- BT19CSE036 (Hasan Koser)
-- BT19CSE054 (Khanke Aditya Ajay)
+- [@Hasan Koser](https://www.github.com/HASH-002)
+- [@Harshini Pillarisetti](https://github.com/Harshi194)
+- [@AdityaKhanke](https://github.com/adityakhanke)

@@ -235,5 +235,5 @@ Step 2: Add external JUnit jar files and JUnit libraries to the project on Eclip
     ```
 
 ## Authors
-- BT19CSE035 (Harshini Pillarisetti)
-- BT19CSE036 (Hasan Koser)
+- [@Hasan Koser](https://www.github.com/HASH-002)
+- [@Harshini Pillarisetti](https://github.com/Harshi194)
