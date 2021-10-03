@@ -1,4 +1,4 @@
-package com.example.spacejet;
+package com.example.spacejet.Modals;
 
 import java.util.Random;
 

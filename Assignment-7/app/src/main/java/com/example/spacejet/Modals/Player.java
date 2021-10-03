@@ -1,9 +1,11 @@
-package com.example.spacejet;
+package com.example.spacejet.Modals;
 
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Rect;
+
+import com.example.spacejet.R;
 
 public class Player {
     //Bitmap to get character from image
@@ -22,7 +24,7 @@ public class Player {
     //Gravity Value to add gravity effect on the ship
     private final int GRAVITY = -10;
 
-    //Controlling Y coordinate so that ship won't go outside the screen
+    // Y coordinates of the ship
     private int maxY;
     private int minY;
 
@@ -45,49 +47,38 @@ public class Player {
         boosting = false; //setting the boosting value to false initially
 
         //initializing rect object
-        detectCollision =  new Rect(x, y, bitmap.getWidth(), bitmap.getHeight());
+        detectCollision = new Rect(x, y, bitmap.getWidth(), bitmap.getHeight());
     }
 
-    //setting boosting true
     public void setBoosting() {
         boosting = true;
     }
-
-    //setting boosting false
     public void stopBoosting() {
         boosting = false;
     }
 
-    //Method to update coordinate of character
-    public void update(){
-        //if the ship is boosting
-        if (boosting) {
-            //speeding up the ship
+    // Method to update coordinate of character
+    public void update() {
+        // Managing speed of ship
+        if (boosting)
             speed += 2;
-        } else {
-            //slowing down if not boosting
+        else
             speed -= 5;
-        }
-        //controlling the top speed
-        if (speed > MAX_SPEED) {
-            speed = MAX_SPEED;
-        }
-        //if the speed is less than min speed
-        //controlling it so that it won't stop completely
-        if (speed < MIN_SPEED) {
-            speed = MIN_SPEED;
-        }
 
-        //moving the ship down
+        //controlling the speed limits
+        if (speed > MAX_SPEED)
+            speed = MAX_SPEED;
+        if (speed < MIN_SPEED)
+            speed = MIN_SPEED;
+
+        // moving the ship down
         y -= speed + GRAVITY;
 
-        //but controlling it also so that it won't go off the screen
-        if (y < minY) {
+        // Managing Screen limit for the ships
+        if (y < minY)
             y = minY;
-        }
-        if (y > maxY) {
+        if (y > maxY)
             y = maxY;
-        }
 
         //adding top, left, bottom and right to the rect object
         detectCollision.left = x;
@@ -100,6 +91,7 @@ public class Player {
     public Rect getDetectCollision() {
         return detectCollision;
     }
+
     public Bitmap getBitmap() {
         return bitmap;
     }

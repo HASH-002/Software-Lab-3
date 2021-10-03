@@ -10,11 +10,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity{
 
-    //image button
+    //Widgets
     private ImageButton buttonPlay;
-    //high score button
     private ImageButton buttonScore;
 
     @Override
@@ -25,29 +24,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //setting the orientation to landscape
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 
-        //getting the button
-        buttonPlay = (ImageButton) findViewById(R.id.buttonPlay);
+        buttonPlay = findViewById(R.id.buttonPlay);
+        buttonScore = findViewById(R.id.buttonScore);
 
-        //initializing the highscore button
-        buttonScore = (ImageButton) findViewById(R.id.buttonScore);
-
-        //setting the on click listener to high score button
-        buttonScore.setOnClickListener(this);
-        //adding a click listener
-        buttonPlay.setOnClickListener(this);
-
-    }
-    @Override
-    public void onClick(View v) {
-        if (v == buttonPlay) {
-            //the transition from MainActivity to GameActivity
-            startActivity(new Intent(MainActivity.this, GameActivity.class));
-        }
-        if (v == buttonScore) {
-
-            //the transition from MainActivity to HighScore activity
-            startActivity(new Intent(MainActivity.this, HighScore.class));
-        }
+        //setting onClick events
+        buttonPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, HighScore.class));
+            }
+        });
+        buttonScore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, GameActivity.class));
+            }
+        });
     }
     @Override
     public void onBackPressed() {
@@ -56,7 +48,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 .setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-
                         GameView.stopMusic();
                         Intent startMain = new Intent(Intent.ACTION_MAIN);
                         startMain.addCategory(Intent.CATEGORY_HOME);
@@ -72,6 +63,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 });
         AlertDialog alert = builder.create();
         alert.show();
-
     }
 }

@@ -1,8 +1,10 @@
-package com.example.spacejet;
+package com.example.spacejet.Modals;
 
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+
+import com.example.spacejet.R;
 
 public class Boom {
 

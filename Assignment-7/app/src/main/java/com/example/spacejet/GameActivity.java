@@ -25,11 +25,8 @@ public class GameActivity extends AppCompatActivity {
         Point size = new Point();
         display.getSize(size);
 
-        //Initializing game view object
-        //this time we are also passing the screen size to the GameView constructor
+        //Initializing gameView object with screen size to the GameView constructor
         gameView = new GameView(this, size.x, size.y);
-
-        //adding it to contentView
         setContentView(gameView);
     }
 
@@ -46,19 +43,15 @@ public class GameActivity extends AppCompatActivity {
         super.onResume();
         gameView.resume();
     }
+
     @Override
     public void onBackPressed() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("Are you sure you want to exit?")
+        builder.setMessage("Are you sure you want to exit? Score will not get saved")
                 .setCancelable(false)
                 .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-
-                        GameView.stopMusic();
-                        Intent startMain = new Intent(Intent.ACTION_MAIN);
-                        startMain.addCategory(Intent.CATEGORY_HOME);
-                        startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity(startMain);
+                        startActivity(new Intent(GameActivity.this, MainActivity.class));
                         finish();
                     }
                 })
@@ -69,6 +62,5 @@ public class GameActivity extends AppCompatActivity {
                 });
         AlertDialog alert = builder.create();
         alert.show();
-
     }
 }
