@@ -1,0 +1,115 @@
+<SOAP-ENV:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+<SOAP-ENV:Body>
+<a1:TErrorsDataSupervisor id="ref-1" xmlns:a1="http://schemas.microsoft.com/clr/nsassem/ErrorsDataSupervisor/Analysis.LTErrors">
+<m_ErrorsContainer href="#ref-3"/>
+<m_AlertsContainer href="#ref-4"/>
+<m_TrackingPeriodInSec>5</m_TrackingPeriodInSec>
+</a1:TErrorsDataSupervisor>
+<a2:TErrorsDataContainer id="ref-3" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/ErrorsDataContainer/Analysis.LTErrors">
+<m_DataCollection href="#ref-5"/>
+<m_IsValid>true</m_IsValid>
+<m_NoDataFlag>false</m_NoDataFlag>
+<m_PrimaryException xsi:null="1"/>
+</a2:TErrorsDataContainer>
+<a2:TErrorsDataContainer id="ref-4" xmlns:a2="http://schemas.microsoft.com/clr/nsassem/ErrorsDataContainer/Analysis.LTErrors">
+<m_DataCollection href="#ref-6"/>
+<m_IsValid>true</m_IsValid>
+<m_NoDataFlag>false</m_NoDataFlag>
+<m_PrimaryException xsi:null="1"/>
+</a2:TErrorsDataContainer>
+<a3:ArrayList id="ref-5" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-7"/>
+<_size>4</_size>
+<_version>4</_version>
+</a3:ArrayList>
+<a3:ArrayList id="ref-6" xmlns:a3="http://schemas.microsoft.com/clr/ns/System.Collections">
+<_items href="#ref-8"/>
+<_size>4</_size>
+<_version>4</_version>
+</a3:ArrayList>
+<SOAP-ENC:Array id="ref-7" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-9"/>
+<item href="#ref-10"/>
+<item href="#ref-11"/>
+<item href="#ref-12"/>
+</SOAP-ENC:Array>
+<SOAP-ENC:Array id="ref-8" SOAP-ENC:arrayType="xsd:anyType[4]">
+<item href="#ref-13"/>
+<item href="#ref-14"/>
+<item href="#ref-15"/>
+<item href="#ref-16"/>
+</SOAP-ENC:Array>
+<a5:TimeRangeRecord id="ref-9" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>0</m_PeriodStartInSec>
+<m_PeriodEndInSec>5</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a5:TimeRangeRecord>
+<a5:TimeRangeRecord id="ref-10" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>5</m_PeriodStartInSec>
+<m_PeriodEndInSec>10</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>0.4</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a5:TimeRangeRecord>
+<a5:TimeRangeRecord id="ref-11" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>10</m_PeriodStartInSec>
+<m_PeriodEndInSec>15</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>1.2</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a5:TimeRangeRecord>
+<a5:TimeRangeRecord id="ref-12" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>15</m_PeriodStartInSec>
+<m_PeriodEndInSec>18</m_PeriodEndInSec>
+<m_Status>rulesStatusNoData</m_Status>
+<m_ActualValue>1.33333333</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a5:TimeRangeRecord>
+<a5:TimeRangeRecord id="ref-13" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>0</m_PeriodStartInSec>
+<m_PeriodEndInSec>5</m_PeriodEndInSec>
+<m_Status>rulesStatusOK</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a5:TimeRangeRecord>
+<a5:TimeRangeRecord id="ref-14" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>5</m_PeriodStartInSec>
+<m_PeriodEndInSec>10</m_PeriodEndInSec>
+<m_Status>rulesStatusOK</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a5:TimeRangeRecord>
+<a5:TimeRangeRecord id="ref-15" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>10</m_PeriodStartInSec>
+<m_PeriodEndInSec>15</m_PeriodEndInSec>
+<m_Status>rulesStatusOK</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a5:TimeRangeRecord>
+<a5:TimeRangeRecord id="ref-16" xmlns:a5="http://schemas.microsoft.com/clr/nsassem/SLARules/Analysis.SLA">
+<m_PeriodStartInSec>15</m_PeriodStartInSec>
+<m_PeriodEndInSec>18</m_PeriodEndInSec>
+<m_Status>rulesStatusOK</m_Status>
+<m_ActualValue>0</m_ActualValue>
+<m_ExpectedValue>0</m_ExpectedValue>
+<m_FormattedActualValue xsi:null="1"/>
+<m_LoadValue>0</m_LoadValue>
+</a5:TimeRangeRecord>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

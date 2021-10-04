@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="bdc1cbcb-c65d-4133-bd21-ea3e3b4da302" activeEnvironment="Default" name="Test_my_soap_service" resourceRoot="${projectDir}" soapui-version="5.6.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="a7aeef4c-a3be-480f-b41a-8d06d1fde318" wsaVersion="NONE" name="PersonServiceImplSoapBinding" type="wsdl" bindingName="{http://service}PersonServiceImplSoapBinding" soapVersion="1_1" anonymous="optional" definition="PersonServiceImpl.wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="file:\C:\Users\HP\eclipse-workspace\SoapProject\WebContent\wsdl\PersonServiceImpl.wsdl"><con:part><con:url>file:\C:\Users\HP\eclipse-workspace\SoapProject\WebContent\wsdl\PersonServiceImpl.wsdl</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://service" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://service" xmlns:intf="http://service" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+  <wsdl:types>
+    <schema elementFormDefault="qualified" targetNamespace="http://service" xmlns="http://www.w3.org/2001/XMLSchema">
+      <element name="deletePerson">
+        <complexType>
+          <sequence>
+            <element name="id" type="xsd:int"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="deletePersonResponse">
+        <complexType>
+          <sequence>
+            <element name="deletePersonReturn" type="xsd:boolean"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="getPerson">
+        <complexType>
+          <sequence>
+            <element name="id" type="xsd:int"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="getPersonResponse">
+        <complexType>
+          <sequence>
+            <element name="getPersonReturn" type="impl:Person"/>
+          </sequence>
+        </complexType>
+      </element>
+      <complexType name="Person">
+        <sequence>
+          <element name="age" type="xsd:int"/>
+          <element name="id" type="xsd:int"/>
+          <element name="name" nillable="true" type="xsd:string"/>
+        </sequence>
+      </complexType>
+      <element name="addPerson">
+        <complexType>
+          <sequence>
+            <element name="p" type="impl:Person"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="addPersonResponse">
+        <complexType>
+          <sequence>
+            <element name="addPersonReturn" type="xsd:boolean"/>
+          </sequence>
+        </complexType>
+      </element>
+      <element name="getAllPersons">
+        <complexType/>
+      </element>
+      <element name="getAllPersonsResponse">
+        <complexType>
+          <sequence>
+            <element maxOccurs="unbounded" name="getAllPersonsReturn" type="impl:Person"/>
+          </sequence>
+        </complexType>
+      </element>
+    </schema>
+  </wsdl:types>
+  <wsdl:message name="getPersonResponse">
+    <wsdl:part element="impl:getPersonResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addPersonRequest">
+    <wsdl:part element="impl:addPerson" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPersonRequest">
+    <wsdl:part element="impl:getPerson" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deletePersonResponse">
+    <wsdl:part element="impl:deletePersonResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addPersonResponse">
+    <wsdl:part element="impl:addPersonResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllPersonsResponse">
+    <wsdl:part element="impl:getAllPersonsResponse" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deletePersonRequest">
+    <wsdl:part element="impl:deletePerson" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAllPersonsRequest">
+    <wsdl:part element="impl:getAllPersons" name="parameters"></wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="PersonServiceImpl">
+    <wsdl:operation name="deletePerson">
+      <wsdl:input message="impl:deletePersonRequest" name="deletePersonRequest"></wsdl:input>
+      <wsdl:output message="impl:deletePersonResponse" name="deletePersonResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPerson">
+      <wsdl:input message="impl:getPersonRequest" name="getPersonRequest"></wsdl:input>
+      <wsdl:output message="impl:getPersonResponse" name="getPersonResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addPerson">
+      <wsdl:input message="impl:addPersonRequest" name="addPersonRequest"></wsdl:input>
+      <wsdl:output message="impl:addPersonResponse" name="addPersonResponse"></wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllPersons">
+      <wsdl:input message="impl:getAllPersonsRequest" name="getAllPersonsRequest"></wsdl:input>
+      <wsdl:output message="impl:getAllPersonsResponse" name="getAllPersonsResponse"></wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PersonServiceImplSoapBinding" type="impl:PersonServiceImpl">
+    <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="deletePerson">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="deletePersonRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deletePersonResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPerson">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getPersonRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPersonResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addPerson">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="addPersonRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addPersonResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllPersons">
+      <wsdlsoap:operation soapAction=""/>
+      <wsdl:input name="getAllPersonsRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAllPersonsResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PersonServiceImplService">
+    <wsdl:port binding="impl:PersonServiceImplSoapBinding" name="PersonServiceImpl">
+      <wsdlsoap:address location="http://localhost:8080/SoapProject/services/PersonServiceImpl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://localhost:8080/SoapProject/services/PersonServiceImpl</con:endpoint></con:endpoints><con:operation id="215a93f3-2987-498b-b251-d29153dade0b" isOneWay="false" action="" name="addPerson" bindingOperationName="addPerson" type="Request-Response" outputName="addPersonResponse" inputName="addPersonRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a0016c70-5db8-43da-8946-cc859c7b0315" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/SoapProject/services/PersonServiceImpl</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:addPerson>\r
+         <ser:p>\r
+            <ser:age>18</ser:age>\r
+            <ser:id>456</ser:id>\r
+            <ser:name>def</ser:name>\r
+         </ser:p>\r
+      </ser:addPerson>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://service/PersonServiceImpl/addPersonRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="ae9c5332-5935-4f28-a7bb-24ae5526d6d6" isOneWay="false" action="" name="deletePerson" bindingOperationName="deletePerson" type="Request-Response" outputName="deletePersonResponse" inputName="deletePersonRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b5a1345e-75ca-48ee-baf4-18da06b2839c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/SoapProject/services/PersonServiceImpl</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:deletePerson>\r
+         <ser:id>?</ser:id>\r
+      </ser:deletePerson>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://service/PersonServiceImpl/deletePersonRequest"/></con:call></con:operation><con:operation id="b7e0f30a-5d3e-49e9-aa6b-87471524fb87" isOneWay="false" action="" name="getAllPersons" bindingOperationName="getAllPersons" type="Request-Response" outputName="getAllPersonsResponse" inputName="getAllPersonsRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="4ae356e9-1995-49e3-bd0e-c4dda0c0cb6b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/SoapProject/services/PersonServiceImpl</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:getAllPersons/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://service/PersonServiceImpl/getAllPersonsRequest"/></con:call></con:operation><con:operation id="733cb596-09fb-4f63-bbc6-2f505803e21c" isOneWay="false" action="" name="getPerson" bindingOperationName="getPerson" type="Request-Response" outputName="getPersonResponse" inputName="getPersonRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="2a07f0b9-be88-4eaa-8d50-8898bfb4658a" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/SoapProject/services/PersonServiceImpl</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:getPerson>\r
+         <ser:id>456</ser:id>\r
+      </ser:getPerson>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://service/PersonServiceImpl/getPersonRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="5fa885c4-62ae-4165-a5eb-ba09d635d42a" name="PersonServiceImplSoapBinding TestSuite"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="63b0f7b8-a355-483d-9872-087161fcf17f" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="addPerson TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="023a1cbd-a7e6-482b-888f-ed74191fcfaf" name="addPerson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PersonServiceImplSoapBinding</con:interface><con:operation>addPerson</con:operation><con:request name="addPerson" id="1add4d1b-d8a6-4b86-9dc8-83a71339a698"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/SoapProject/services/PersonServiceImpl</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:addPerson>\r
+         <ser:p>\r
+            <ser:age>?</ser:age>\r
+            <ser:id>?</ser:id>\r
+            <ser:name>?</ser:name>\r
+         </ser:p>\r
+      </ser:addPerson>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://service/PersonServiceImpl/addPersonRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="acda730d-5cb5-4dfc-9414-03120e1f8769" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="deletePerson TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="f8589fd9-07e8-462e-a14e-ff87a86d4b1f" name="deletePerson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PersonServiceImplSoapBinding</con:interface><con:operation>deletePerson</con:operation><con:request name="deletePerson" id="286182ba-1a1a-43f3-93f7-d6f3644e78ba"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/SoapProject/services/PersonServiceImpl</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:deletePerson>\r
+         <ser:id>?</ser:id>\r
+      </ser:deletePerson>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://service/PersonServiceImpl/deletePersonRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="2094019f-d910-4304-a764-5d935425cd76" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getAllPersons TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="cb7cb737-38a3-4821-b688-bb82aa069519" name="getAllPersons"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PersonServiceImplSoapBinding</con:interface><con:operation>getAllPersons</con:operation><con:request name="getAllPersons" id="50218aa8-0db8-413a-b395-3a413d8a966e"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/SoapProject/services/PersonServiceImpl</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:getAllPersons/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://service/PersonServiceImpl/getAllPersonsRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="ecfa2e4e-d357-4b0a-81b2-40123a2e2d7e" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="getPerson TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="0ae45910-0471-4dee-a6f4-15db70ba7dbe" name="getPerson"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>PersonServiceImplSoapBinding</con:interface><con:operation>getPerson</con:operation><con:request name="getPerson" id="d7dafd2c-f89e-4bb6-8734-fd059bed714a"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://localhost:8080/SoapProject/services/PersonServiceImpl</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://service">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:getPerson>\r
+         <ser:id>?</ser:id>\r
+      </ser:getPerson>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig action="http://service/PersonServiceImpl/getPersonRequest"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

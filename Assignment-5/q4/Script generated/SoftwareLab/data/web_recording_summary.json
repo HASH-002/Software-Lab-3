@@ -1,0 +1,1098 @@
+{
+  "FilterHeaders": [
+    {
+      "Header": "x-search-rpstoken",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "x-microsoft-update-updater",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "x-microsoft-update-interactivity",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "x-microsoft-update-appid",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "x-afs-cv",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "x-afs-clientinfo",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "user-agent",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "upgrade-insecure-requests",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-mesh-client-webview",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-mesh-client-os-version",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-mesh-client-os",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-mesh-client-edge-version",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-mesh-client-edge-channel",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-mesh-client-arch",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-fetch-user",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-fetch-site",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-fetch-mode",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "sec-fetch-dest",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "pragma",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "origin",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "if-none-match",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "content-encoding",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "cache-control",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "authorization",
+      "IncludeInScript": true
+    },
+    {
+      "Header": "accept-language",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept-encoding",
+      "IncludeInScript": false
+    },
+    {
+      "Header": "accept",
+      "IncludeInScript": false
+    }
+  ],
+  "FilterResources": [
+    {
+      "IsNonResource": false,
+      "type": "text/plain"
+    },
+    {
+      "IsNonResource": false,
+      "type": "text/javascript"
+    },
+    {
+      "IsNonResource": true,
+      "type": "text/html"
+    },
+    {
+      "IsNonResource": false,
+      "type": "text/css"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/webp"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/png"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/jpeg"
+    },
+    {
+      "IsNonResource": false,
+      "type": "image/gif"
+    },
+    {
+      "IsNonResource": false,
+      "type": "font/woff2"
+    },
+    {
+      "IsNonResource": false,
+      "type": "application/vnd.google.octet-stream-compressible"
+    },
+    {
+      "IsNonResource": true,
+      "type": "application/json"
+    },
+    {
+      "IsNonResource": false,
+      "type": "application/binary"
+    }
+  ],
+  "GeneralInfo": {
+    "BrowserVersion": "",
+    "IsWinInetMode": false,
+    "MaxUsedConnections": 35,
+    "RecordedBrowser": "c:\\program files (x86)\\microsoft\\edge\\application\\msedge.exe",
+    "RecordingDate": "Oct-04-2021",
+    "RecordingDuration": 77968,
+    "RecordingMode": "N/A",
+    "RecordingTimeStamp": 1633321792,
+    "RecordingType": "Application",
+    "TotalBytesReceived": 4070466,
+    "TotalBytesSent": 56367,
+    "TotalRequests": 74,
+    "UserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Edg/94.0.992.38"
+  },
+  "HostInfo": [
+    {
+      "DomainName": "ytimg.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.66.22",
+          "IncludeInScript": true,
+          "Name": "i.ytimg.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 78,
+              "EventId": 3223,
+              "HttpStatus": 200,
+              "Size": 48156,
+              "URL": "https://i.ytimg.com/vi/DB3D-mtWR0c/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCpcdsVWMt66_9r-sOxEdVLcuqp_w"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 3220,
+              "HttpStatus": 200,
+              "Size": 48422,
+              "URL": "https://i.ytimg.com/vi/9LrQ7F2l-ss/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDfzD_Ay4j0RWsIbsprv4a2cM7gGQ"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 63,
+              "EventId": 3217,
+              "HttpStatus": 200,
+              "Size": 54180,
+              "URL": "https://i.ytimg.com/vi/s58rO7eSWLc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAzAEKGs62XowQYlDv7ymG_NeAQFw"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 3215,
+              "HttpStatus": 200,
+              "Size": 47478,
+              "URL": "https://i.ytimg.com/vi/UAaH9CFlHwc/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCUB6a0YIsNp7IJB1OvdS3Y9slE_g"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 32,
+              "EventId": 3212,
+              "HttpStatus": 200,
+              "Size": 44500,
+              "URL": "https://i.ytimg.com/vi/3eJMovcItXg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBC3RO4mbWiSairdWYpyabAwYMKlA"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 62,
+              "EventId": 3001,
+              "HttpStatus": 200,
+              "Size": 55550,
+              "URL": "https://i.ytimg.com/vi/4J0pg1LmhQg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBqLZG6NxjAiAvq_MCIT9QBhl_PHg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 62,
+              "EventId": 2998,
+              "HttpStatus": 200,
+              "Size": 41394,
+              "URL": "https://i.ytimg.com/vi/lX3vT_Gm_HE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBzRfvSeWD2xGt8jmXUgWOkz6o7kQ"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 2994,
+              "HttpStatus": 200,
+              "Size": 46298,
+              "URL": "https://i.ytimg.com/vi/BDaCRoi0Zxw/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCjl6KdzRTg9pjH5Z37ZM3nI9yyFA"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 2990,
+              "HttpStatus": 200,
+              "Size": 43972,
+              "URL": "https://i.ytimg.com/vi/bi5PhlIQpwU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDLYVZCLygsb84jArDAXKk_8ZVhiQ"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 2988,
+              "HttpStatus": 200,
+              "Size": 35400,
+              "URL": "https://i.ytimg.com/vi/7htUqA1uDCU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDrQEBI2weK8fanJMnTWd7a6hvwOA"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 32,
+              "EventId": 2984,
+              "HttpStatus": 200,
+              "Size": 57950,
+              "URL": "https://i.ytimg.com/vi/w4ClQO0FFQg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDOIH4BUTEROcrxjfWOnhUho6BsHQ"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 2844,
+              "HttpStatus": 200,
+              "Size": 72498,
+              "URL": "https://i.ytimg.com/vi/4sSl4UgyjHw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAv70XM9w3CG9VgRq4ZrfoVg4YwEQ"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 2788,
+              "HttpStatus": 200,
+              "Size": 61804,
+              "URL": "https://i.ytimg.com/vi/g1KTGM6YgoQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB8nlseTe9HgdbhvtH6jx4iA_WSqw"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 46,
+              "EventId": 2759,
+              "HttpStatus": 200,
+              "Size": 71708,
+              "URL": "https://i.ytimg.com/vi/CrHWF7YD0IY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCrNSsTDXc3QXCSnAyDXPe-IwPOtg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 2590,
+              "HttpStatus": 200,
+              "Size": 62962,
+              "URL": "https://i.ytimg.com/vi/W8eix6fM59g/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLChZpj6MhuW8IXgzbP8xCvoZWRf9A"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 94,
+              "EventId": 2566,
+              "HttpStatus": 200,
+              "Size": 89130,
+              "URL": "https://i.ytimg.com/vi/Dwqwgf23NlU/hq720_live.jpg?sqp=CMiG6ooG-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCV_WqnMb6RN3ckp1t0waLz2L8GxA"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 2550,
+              "HttpStatus": 200,
+              "Size": 69510,
+              "URL": "https://i.ytimg.com/vi/-I9hIXRjXtE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA7Qlyh6RD_hb_rrOt3OaQmoxz2vg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 32,
+              "EventId": 2543,
+              "HttpStatus": 200,
+              "Size": 63280,
+              "URL": "https://i.ytimg.com/vi/SnvT9xPPldo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDk68Fhn99JWsT_OKWau207y_YySA"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 2541,
+              "HttpStatus": 200,
+              "Size": 40812,
+              "URL": "https://i.ytimg.com/vi/-93FYeJBKDQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCc04ZJbI7muimDoZCZg0lN3iF5kw"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 2532,
+              "HttpStatus": 200,
+              "Size": 33342,
+              "URL": "https://i.ytimg.com/vi/tO0lt8agv98/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBvgCRkDUQkyLgmlhcmtCNNCRaVsw"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 62,
+              "EventId": 2318,
+              "HttpStatus": 200,
+              "Size": 44346,
+              "URL": "https://i.ytimg.com/vi/cjjofxNQshM/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDfKrKmFSt5ebottuHsHbKEls-PLQ"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 78,
+              "EventId": 2309,
+              "HttpStatus": 200,
+              "Size": 48136,
+              "URL": "https://i.ytimg.com/vi/gvyUuxdRdR4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDcBTtuu3J65Pz2bspKXzcEMsuzcA"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 63,
+              "EventId": 2303,
+              "HttpStatus": 200,
+              "Size": 72718,
+              "URL": "https://i.ytimg.com/vi/MU1KlsgYd5Q/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLByRpqNf3sTSRSXvoF4OohZy2QB0Q"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 2295,
+              "HttpStatus": 200,
+              "Size": 67476,
+              "URL": "https://i.ytimg.com/vi/1eYZ5WulRBk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAzxdIhb9LGgP240m7w2UMMY-DTZA"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 46,
+              "EventId": 2293,
+              "HttpStatus": 200,
+              "Size": 40736,
+              "URL": "https://i.ytimg.com/vi/VuCHCFTyskk/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC0NC48ibn844AyoOJ5nQN_03Q86A"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 46,
+              "EventId": 2291,
+              "HttpStatus": 200,
+              "Size": 37150,
+              "URL": "https://i.ytimg.com/vi/1--qqQrimMA/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCtwCXhZ3xR3RDshRvmPZhM2Gb-Yg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 2173,
+              "HttpStatus": 200,
+              "Size": 74852,
+              "URL": "https://i.ytimg.com/vi/ud1rUsqcqj0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDaovrwLqj_E8jcJcpsvrqTlz7JoA"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 2106,
+              "HttpStatus": 200,
+              "Size": 85828,
+              "URL": "https://i.ytimg.com/vi/JngV9Ix5hnk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA8stAWHD5FiNunp-TIiJX4K886wQ"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 2093,
+              "HttpStatus": 200,
+              "Size": 37948,
+              "URL": "https://i.ytimg.com/vi/nks4U0yUGas/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDARhpHdUqeUd_hu2AmOM8KYZ_3Hg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 46,
+              "EventId": 2070,
+              "HttpStatus": 200,
+              "Size": 81536,
+              "URL": "https://i.ytimg.com/vi/sUoVswDWNCQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBJDsgIkvisQBzJlVWDRNua904vGQ"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 109,
+              "EventId": 2011,
+              "HttpStatus": 200,
+              "Size": 56106,
+              "URL": "https://i.ytimg.com/vi/sBBFSuHATmw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAWQUfnsu5-jJI1fao5Q56a1Lcszg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 1991,
+              "HttpStatus": 200,
+              "Size": 46120,
+              "URL": "https://i.ytimg.com/vi/orYf6VDtj_k/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDgglhc3dnaFFIPHqWJ7Jn2p2REbg"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 94,
+              "EventId": 1845,
+              "HttpStatus": 200,
+              "Size": 38556,
+              "URL": "https://i.ytimg.com/vi/j3KowCpjK1I/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAzjifTDbqYJysjF--o0xM5ewdZdA"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 63,
+              "EventId": 1811,
+              "HttpStatus": 200,
+              "Size": 19084,
+              "URL": "https://i.ytimg.com/vi/PsWQa2dd7H0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAaS4jnRhosIpguzBjUFwBqSaFg3Q"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 63,
+              "EventId": 1803,
+              "HttpStatus": 200,
+              "Size": 35486,
+              "URL": "https://i.ytimg.com/vi/LG19ZG7XQZs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfnFSosyyyUqbdukz52LeV0IpN4A"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 1797,
+              "HttpStatus": 200,
+              "Size": 39118,
+              "URL": "https://i.ytimg.com/vi/pRbxlpvXw2s/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC-89dNt9_dGfM3Oq_WJorgsbMyWQ"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 47,
+              "EventId": 1679,
+              "HttpStatus": 200,
+              "Size": 74170,
+              "URL": "https://i.ytimg.com/vi/EsMSi0CF3jE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDG9tZpn7a1n5MOccqHyI1yPMZ-_A"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/webp",
+              "DownloadTime": 31,
+              "EventId": 1601,
+              "HttpStatus": 200,
+              "Size": 60570,
+              "URL": "https://i.ytimg.com/vi/j9J7cjGU_jM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAir1sTjLQcfNZhZIqlqJyJuM-F0g"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "",
+              "DownloadTime": 47,
+              "EventId": 1052,
+              "HttpStatus": 204,
+              "Size": 0,
+              "URL": "https://i.ytimg.com/generate_204"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "youtube.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.66.14",
+          "IncludeInScript": true,
+          "Name": "youtube.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/binary",
+              "DownloadTime": 141,
+              "EventId": 3025,
+              "HttpStatus": 301,
+              "Size": 0,
+              "URL": "https://youtube.com/"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.77.78",
+          "IncludeInScript": true,
+          "Name": "www.youtube.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "text/css",
+              "DownloadTime": 78,
+              "EventId": 1047,
+              "HttpStatus": 200,
+              "Size": 929,
+              "URL": "https://www.youtube.com/s/desktop/18284868/cssbin/www-main-desktop-watch-page-skeleton.css"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/css",
+              "DownloadTime": 62,
+              "EventId": 1043,
+              "HttpStatus": 200,
+              "Size": 239,
+              "URL": "https://www.youtube.com/s/desktop/18284868/cssbin/www-onepick.css"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 78,
+              "EventId": 1041,
+              "HttpStatus": 200,
+              "Size": 793,
+              "URL": "https://www.youtube.com/s/desktop/18284868/jsbin/custom-elements-es5-adapter.vflset/custom-elements-es5-adapter.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 46,
+              "EventId": 1037,
+              "HttpStatus": 200,
+              "Size": 21590,
+              "URL": "https://www.youtube.com/s/desktop/18284868/jsbin/webcomponents-sd.vflset/webcomponents-sd.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/css",
+              "DownloadTime": 31,
+              "EventId": 1035,
+              "HttpStatus": 200,
+              "Size": 698,
+              "URL": "https://www.youtube.com/s/desktop/18284868/cssbin/www-main-desktop-home-page-skeleton.css"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 47,
+              "EventId": 1008,
+              "HttpStatus": 200,
+              "Size": 15162,
+              "URL": "https://www.youtube.com/s/desktop/18284868/jsbin/web-animations-next-lite.min.vflset/web-animations-next-lite.min.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/javascript",
+              "DownloadTime": 31,
+              "EventId": 155,
+              "HttpStatus": 200,
+              "Size": 1300719,
+              "URL": "https://www.youtube.com/s/desktop/18284868/jsbin/desktop_polymer.vflset/desktop_polymer.js"
+            },
+            {
+              "CompressionType": "br",
+              "DataType": "text/html",
+              "DownloadTime": 109,
+              "EventId": 97,
+              "HttpStatus": 200,
+              "Size": 59797,
+              "URL": "https://www.youtube.com/"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "windows.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "51.105.218.222",
+          "IncludeInScript": true,
+          "Name": "edge.activity.windows.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "",
+              "DownloadTime": 453,
+              "EventId": 1077,
+              "HttpStatus": 201,
+              "Size": 569,
+              "URL": "https://edge.activity.windows.com/v2/feeds/me/subscriptions"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/vnd.google.octet-stream-compressible",
+              "DownloadTime": 359,
+              "EventId": 322,
+              "HttpStatus": 200,
+              "Size": 116,
+              "URL": "https://edge.activity.windows.com/v1/feeds/me/syncEntities/command/?client=Chromium&client_id=kwCR2K%2FiVOxezc1selhFsA%3D%3D"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 312,
+              "EventId": 95,
+              "HttpStatus": 200,
+              "Size": 108,
+              "URL": "https://edge.activity.windows.com/v2/feeds/me/settings/homeCloud"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "skype.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "13.107.42.16",
+          "IncludeInScript": true,
+          "Name": "config.edge.skype.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 235,
+              "EventId": 87,
+              "HttpStatus": 304,
+              "Size": 0,
+              "URL": "https://config.edge.skype.com/config/v1/Edge/94.0.992.38?clientId=-4395319592885350170&osname=win&client=edge&channel=stable&scpfull=0&scpguard=1&scpfre=0&scpver=2&osver=10.0.19043&osarch=x86_64&osedition=home&wu=0&devicefamily=desktop&uma=1&mngd=0&installdate=1628498728"
+            }
+          ],
+          "SSLCipher": "ECDHE-RSA-AES256-GCM-SHA384",
+          "SSLVersion": "TLS1.2"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "microsoft.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "204.79.197.219",
+          "IncludeInScript": true,
+          "Name": "edge.microsoft.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "application/json",
+              "DownloadTime": 172,
+              "EventId": 2000,
+              "HttpStatus": 200,
+              "Size": 418,
+              "URL": "https://edge.microsoft.com/componentupdater/api/v1/update?cup2key=4:906110854&cup2hreq=85a16f65a0d3941ede86ac737f2c422e88d1be15861fc552d9d1a2c96af0b120"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "text/plain",
+              "DownloadTime": 172,
+              "EventId": 1729,
+              "HttpStatus": 200,
+              "Size": 20,
+              "URL": "https://edge.microsoft.com/autofillservice/v1/pages/ChNDaHJvbWUvOTQuMC40NjA2LjcxEhAJPMqv4xTphZsSBQ3xo1vj?alt=proto"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "application/json",
+              "DownloadTime": 219,
+              "EventId": 89,
+              "HttpStatus": 200,
+              "Size": 1672,
+              "URL": "https://edge.microsoft.com/identity/api/v2/msa"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "gstatic.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.183.195",
+          "IncludeInScript": true,
+          "Name": "www.gstatic.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/javascript",
+              "DownloadTime": 203,
+              "EventId": 2975,
+              "HttpStatus": 200,
+              "Size": 2007,
+              "URL": "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 78,
+              "EventId": 1847,
+              "HttpStatus": 200,
+              "Size": 5368,
+              "URL": "https://www.gstatic.com/youtube/img/promos/growth/50f85885003c94b4a70bbe7221c7985e4cb1c55f0e43f78f849824c20ccc58b5_640x48.png"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/png",
+              "DownloadTime": 31,
+              "EventId": 1683,
+              "HttpStatus": 200,
+              "Size": 24596,
+              "URL": "https://www.gstatic.com/youtube/img/promos/growth/3300985d3fcd055eee35a3388df0b49c62bb96bb287cc11a49c99b0617ccdc77_2560x520.png"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.251.42.35",
+          "IncludeInScript": true,
+          "Name": "fonts.gstatic.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "font/woff2",
+              "DownloadTime": 78,
+              "EventId": 1829,
+              "HttpStatus": 200,
+              "Size": 15828,
+              "URL": "https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmWUlfBBc4.woff2"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "font/woff2",
+              "DownloadTime": 78,
+              "EventId": 1822,
+              "HttpStatus": 200,
+              "Size": 24928,
+              "URL": "https://fonts.gstatic.com/s/youtubesans/v8/Qw38ZQNGEDjaO2m6tqIqX5E-AVS5_rSejo46_PCTRspJ0OosolrBEJL3HO_T7fE.woff2"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "font/woff2",
+              "DownloadTime": 63,
+              "EventId": 1816,
+              "HttpStatus": 200,
+              "Size": 15920,
+              "URL": "https://fonts.gstatic.com/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "font/woff2",
+              "DownloadTime": 47,
+              "EventId": 1691,
+              "HttpStatus": 200,
+              "Size": 15688,
+              "URL": "https://fonts.gstatic.com/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "googleapis.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.195.42",
+          "IncludeInScript": true,
+          "Name": "fonts.googleapis.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/css",
+              "DownloadTime": 78,
+              "EventId": 1070,
+              "HttpStatus": 200,
+              "Size": 870,
+              "URL": "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=YouTube+Sans:wght@300..900&display=swap"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "google.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.182.4",
+          "IncludeInScript": true,
+          "Name": "www.google.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/gif",
+              "DownloadTime": 125,
+              "EventId": 1832,
+              "HttpStatus": 200,
+              "Size": 42,
+              "URL": "https://www.google.com/pagead/lvz?evtid=AKB78ch5T0tQzOh7o-wjadFKOLRPpdPKUYwMoz6VzzlmaWCVb0xJ7AYyodh3Zaci1Mg1zkuMK1DY-R4iKZ1Bze584OFN7ElvaQ&req_ts=1633321817&pg=MainAppBootstrap%3AHome&az=1&sigh=AKFpyYWht1oO4p5AI1kmdnYiSmXWuWLFqA"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.192.141",
+          "IncludeInScript": true,
+          "Name": "accounts.google.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "gzip",
+              "DataType": "text/html",
+              "DownloadTime": 140,
+              "EventId": 1099,
+              "HttpStatus": 200,
+              "Size": 497428,
+              "URL": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fsignin_passive%26feature%3Dpassive&hl=en"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "google.co.in",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.251.42.67",
+          "IncludeInScript": true,
+          "Name": "www.google.co.in",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/gif",
+              "DownloadTime": 125,
+              "EventId": 1726,
+              "HttpStatus": 200,
+              "Size": 42,
+              "URL": "https://www.google.co.in/pagead/lvz?evtid=AKB78ch5T0tQzOh7o-wjadFKOLRPpdPKUYwMoz6VzzlmaWCVb0xJ7AYyodh3Zaci1Mg1zkuMK1DY-R4iKZ1Bze584OFN7ElvaQ&req_ts=1633321817&pg=MainAppBootstrap%3AHome&az=1&sigh=AKFpyYWht1oO4p5AI1kmdnYiSmXWuWLFqA"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "ggpht.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.193.129",
+          "IncludeInScript": true,
+          "Name": "yt3.ggpht.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 62,
+              "EventId": 1997,
+              "HttpStatus": 200,
+              "Size": 2049,
+              "URL": "https://yt3.ggpht.com/ytc/AKedOLQEtaXOYwh87BvVOp7-nLoiZNlLuW-X8PN37OwyV8c=s68-c-k-c0x00ffffff-no-rj"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 47,
+              "EventId": 1980,
+              "HttpStatus": 200,
+              "Size": 3304,
+              "URL": "https://yt3.ggpht.com/Nox2EXPVCOzTxp-ol6smEivHr6esxd27o_E_26RlHIE9esM7Xcd391XrZbtBLg7TgH4kDAYRMA=s68-c-k-c0x00ffffff-no-rj"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 62,
+              "EventId": 1978,
+              "HttpStatus": 200,
+              "Size": 4116,
+              "URL": "https://yt3.ggpht.com/ytc/AKedOLS5DwL15DjvEUi7a36RXAgvHUKLCAEFm8Uaw1pQ-g=s68-c-k-c0x00ffffff-no-rj"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 62,
+              "EventId": 1976,
+              "HttpStatus": 200,
+              "Size": 3963,
+              "URL": "https://yt3.ggpht.com/ytc/AKedOLQtdriwxzeBde7W9ZDf2KYGtxEz-7RkzWhgemBm=s68-c-k-c0x00ffffff-no-rj"
+            },
+            {
+              "CompressionType": "",
+              "DataType": "image/jpeg",
+              "DownloadTime": 47,
+              "EventId": 1972,
+              "HttpStatus": 200,
+              "Size": 3156,
+              "URL": "https://yt3.ggpht.com/ytc/AKedOLSLoqP3pxh4nxmkaZvxhgFVxvzIhTctHsltCsbqKg=s68-c-k-c0x00ffffff-no-rj"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "doubleclick.net",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.196.166",
+          "IncludeInScript": true,
+          "Name": "static.doubleclick.net",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/javascript",
+              "DownloadTime": 63,
+              "EventId": 3208,
+              "HttpStatus": 200,
+              "Size": 29,
+              "URL": "https://static.doubleclick.net/instream/ad_status.js"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        },
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "142.250.76.194",
+          "IncludeInScript": true,
+          "Name": "googleads.g.doubleclick.net",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "",
+              "DataType": "text/html",
+              "DownloadTime": 109,
+              "EventId": 1874,
+              "HttpStatus": 302,
+              "Size": 0,
+              "URL": "https://googleads.g.doubleclick.net/pagead/id"
+            }
+          ],
+          "SSLCipher": "TLS_AES_256_GCM_SHA384",
+          "SSLVersion": "TLS1.3"
+        }
+      ],
+      "IncludeInScript": true
+    },
+    {
+      "DomainName": "bing.com",
+      "Domains": [
+        {
+          "HTTPVersion": "HTTP/1.1",
+          "IP": "204.79.197.200",
+          "IncludeInScript": true,
+          "Name": "www.bing.com",
+          "Port": 443,
+          "Requests": [
+            {
+              "CompressionType": "br",
+              "DataType": "text/html",
+              "DownloadTime": 140,
+              "EventId": 1068,
+              "HttpStatus": 200,
+              "Size": 20,
+              "URL": "https://www.bing.com/fd/auth/signin?&action=header&provider=windows_live_id&save_token=0"
+            }
+          ],
+          "SSLCipher": "",
+          "SSLVersion": ""
+        }
+      ],
+      "IncludeInScript": true
+    }
+  ],
+  "WebSocket": {
+    "IncludeInScript": false,
+    "IsScriptIncludeWebSocket": false
+  },
+  "NumberOfCorrelations": 0
+}

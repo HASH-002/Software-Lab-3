@@ -1,0 +1,6 @@
+"{\"channelurl\":\"https://wns2-sg2p.notify.windows.com/w/?token=BQYAAACQ4U%2fuq1hmlsFpd7f2PX3K"
+"NnVJMEWcs2MfCfGziZCDPJf2JaO9M37vRAo143umlsR14hSPCKEg63rmDYjfcT69FlTwxsjgK%2fI%2bM%2fE05cHf3h22"
+"xSFCkWY1%2bue%2bfIUxGeyWEdg56twi1WB%2fWulDM38WF%2fQuWmHFB62mbKwrCnE2yZCNcjqfOyO5BrgLmLU5Fu6vA8"
+"c5uyBUCcQkKRv9IHSqlEUOLcV8t2CISM2Se1KoI9XtDBUcmV8EXf4qALTDBYE%3d\",\"deviceId\":\"chr:kwCR2K/i"
+"VOxezc1selhFsA==\",\"publisherFilters\":[{\"activityTypes\":[71,82],\"application\":\"edge.act"
+"ivity.windows.com\",\"notificationType\":\"notificationOnly\",\"platform\":\"host\"}]}"

@@ -1,0 +1,12 @@
+HTTP/1.1 201 Created
+Cache-Control: max-age=2592000
+Content-Length: 569
+Content-Encoding: gzip
+ETag: "18097141290300818603"
+Location: /V2/feeds/me/subscriptions/230c49d2-e842-827a-1ff5-f6b79a35a1eb
+X-AFS-DataMigrationStage: 0
+X-AFS-Tracking: cV=w8mS46ga60qMhAg4.0;server=AM3PEPF000009A9;cloudType=0;environment=48F630A6-CB1B-4CC7-86AF-0F6627234B58
+client-request-id: 51f4056e-e6f1-4427-8e72-e92aeae7c42a
+X-Content-Type-Options: nosniff
+Date: Mon, 04 Oct 2021 04:30:30 GMT
+

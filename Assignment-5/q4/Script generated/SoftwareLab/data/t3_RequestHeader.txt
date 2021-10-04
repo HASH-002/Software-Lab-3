@@ -1,0 +1,15 @@
+GET /v2/feeds/me/settings/homeCloud HTTP/1.1
+Host: edge.activity.windows.com
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+Authorization: t=EwAgA3l+BAAUvDBLmTCD21dGgKWS1TSPVrFoWQcAASiCwqScy9rHu6+wQQlqJYzVoYdilxRukEt5YJMq6AzDGnLDdTFcXQyol9Isx+UDSspkVekzk6QE9HkKqt3X6GdHDyVVmVdiFM+LVBsIegoMZmpWYrZSmU/gCu73J64mra9SfvKdqrqrC67gOWmV3/jLRylhJcPYqXvzeL90hKHWN6C7EA7dQatkoXXwWifwaNsZMwTtKrwI3DBqNbhfTnWhqJHOLG6TdFZ6UiwG4WO13riG0f83jN02qu07HWzHtMN21Vn33QJNXk9IdbMmYTJCZGyHhdEyRYWYwcOJ7u4+JM1+aDQNzXgYOimumf5zLPmS4vz/PpL5oKXyKFY5lWYDZgAACFlkPntKq0lu8AHY5GRIYUb03VOyhTEdQcIRawpcb+Wnu/n8Pc2vT0xx9YCOOSHWkhZCfJCKPB5CMVtiFeqDXv5IAH8TwWedcjcXIFgffDV2gT9IlYwwr5e1zKvrvm/Kl/yviiEutZ6XxBQR7bRYmZtfZveZWwj+9GvTRSaQbQndhHTi/grM1/DjTvXKmYNgJrwpWg07rARaSLd0s3idvhvAz0axfcjwVCva4kpN4xs18E8LWT+tQcUdIJdN+lSfJK3ZU7K3k5dlMob0TiCfg5sZIcryzBoZIkit/1HbE9YSH/TcnhQspVVuRCqpBUJ2HlMjHHRS5IGRtZ39Az0BVrRESnik/pJytJQXB8WPOhbvwNFl7Y1lkdnH00r2siDtevvE4sy/5I06wybf83pKeT4xMkWg5GQWxjCS5wSMFDYao8mcsRlqpc4XT3ISB1shx3EfHuGLF5w7CbyFvHXrDLL2gFgngwM7Mvx2BKlFhCZIArjC7l1Kp8pgaAgGVdtgaZ45kSzPEaroRlE7FY4+Pj/QWrShcI6Mivo529nOXp40W5q7uIztkzok8+VcsyaU0Of9U9fklw3ZENiPdoOW6yGgoSC9a5sqhv+wp9nPccRqT5Ltxp4dYX4mgJZlVORgFgXz0ulDqH7MHrdXPiX1CzqZG3pWFkt3wB0KMgI=&p=
+X-AFS-ClientInfo: platform=Windows; os=Windows NT; osVer=10.0.19043; app=Microsoft Edge; appVer=94.0.992.38; appChannel=stable;
+X-AFS-CV: tgC49zWKKjbr8iCY0i6lY4
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Edg/94.0.992.38
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+

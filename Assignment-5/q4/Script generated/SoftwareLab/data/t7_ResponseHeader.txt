@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Length: 20
+Content-Type: text/html; charset=utf-8
+Content-Encoding: br
+Vary: Accept-Encoding
+P3P: CP="NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND"
+Set-Cookie: _EDGE_S=SID=2A49A52724C661A11811B5E1256E6094; domain=.bing.com; path=/; HttpOnly
+Set-Cookie: WLS=C=01147b192efa194b&N=HP+LAPTOP; domain=.bing.com; path=/; secure; SameSite=None
+Set-Cookie: _SS=SID=2A49A52724C661A11811B5E1256E6094; domain=.bing.com; path=/; secure; SameSite=None
+Set-Cookie: _U=1A8THnvTFFDUH058sM-HO5taAPMh857StNTuKPnBkRZoLoA3WLoMSDonHyMLR_S_3yfuZQeflrQR-MxfeZbMGPIUf8SZ0d2oYlwY0WQdbY9d7OPeUuq29m93He2il7mztzsSef3FHOWtX92pqYWgEzzFovjg7Cw3FFoGgJrT8l9AWg9RmWEHmMsLadKY7if8h0XhwXEho_X8aQsF8b6eb8w; domain=.bing.com; expires=Mon, 18-Oct-2021 04:30:31 GMT; path=/; secure; SameSite=None
+Set-Cookie: ANON=A=859765435557B4D533FF647AFFFFFFFF; domain=.bing.com; expires=Wed, 04-Oct-2023 04:30:31 GMT; path=/; secure; SameSite=None
+X-SNR-Routing: 1
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: 3E4AB8A8E90443D2A625EEABEEBCDA2E Ref B: BOM01EDGE0819 Ref C: 2021-10-04T04:30:31Z
+Date: Mon, 04 Oct 2021 04:30:31 GMT
+

@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+X-Frame-Options: DENY
+x-auto-login: realm=com.google&args=service%3Dyoutube%26continue%3Dhttps%253A%252F%252Fwww.youtube.com%252Fsignin%253Faction_handle_signin%253Dtrue%2526app%253Ddesktop%2526hl%253Den%2526next%253D%25252Fsignin_passive%2526feature%253Dpassive
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Date: Mon, 04 Oct 2021 04:30:37 GMT
+Content-Encoding: gzip
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Content-Security-Policy: script-src 'report-sample' 'nonce-fzp69V7qk/7sTrCMsufdpA' 'unsafe-inline' 'unsafe-eval';object-src 'none';base-uri 'self';report-uri /cspreport
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Set-Cookie: __Host-GAPS=1:KFBlQZGC118pDJ5GdSqidqIczDvC8g:3vMtXgk_y9fiYL4p;Path=/;Expires=Wed, 04-Oct-2023 04:30:37 GMT;Secure;HttpOnly;Priority=HIGH
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-T051=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
+Transfer-Encoding: chunked
+

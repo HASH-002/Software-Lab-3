@@ -1,0 +1,13 @@
+[t7]
+FileName1=t7_signin.html
+URL1=https://www.bing.com/fd/auth/signin?&action=header&provider=windows_live_id&save_token=0
+Total=2
+ContentType=text/html
+SnapshotXmlFile=snapshot_7.xml
+RequestHeaderFile=t7_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t7_ResponseHeader.txt
+FileName2=t7_css2.css
+URL2=https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=YouTube+Sans:wght@300..900&display=swap
+[ProtocolInfo]
+ProtocolId=QTWeb
