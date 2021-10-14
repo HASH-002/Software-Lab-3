@@ -3,14 +3,17 @@ package com.example.spacejet;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.media.MediaPlayer;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.widget.Toast;
 
 import com.example.spacejet.Modals.Boom;
 import com.example.spacejet.Modals.Enemy;
@@ -22,6 +25,7 @@ import java.util.ArrayList;
 
 public class GameView extends SurfaceView implements Runnable {
 
+    private final int OUT_OF_SCREEN = 100000;
     //boolean variable to track if the game is playing or not
     volatile boolean playing;
 
@@ -30,13 +34,13 @@ public class GameView extends SurfaceView implements Runnable {
 
     //context to be used in onTouchEvent to cause the activity transition from GameActivity to MainActivity.
     private Context context;
-    
+
     private Player player;
     private Enemy enemy;
     private Friend friend;
     private Boom boom;
     private ArrayList<Star> stars;
-    
+
     //These objects will be used for drawing
     private Paint paint;
     private Canvas canvas;
@@ -137,7 +141,9 @@ public class GameView extends SurfaceView implements Runnable {
             //playing a sound at the collision between player and the enemy
             killedEnemySound.start();
 
-            enemy.setX(-200);
+            enemy.setX(OUT_OF_SCREEN);
+
+            Log.d("mydebug", "Enemy Hit");
         }
         // the condition where player misses the enemy
         else{
@@ -149,7 +155,8 @@ public class GameView extends SurfaceView implements Runnable {
 
                     //increment countMisses
                     countMisses++;
-
+                    enemy.setX(OUT_OF_SCREEN);
+                    Log.d("mydebug", "Enemy missed");
                     //setting the flag false so that the else part is executed only when new enemy enters the screen
                     flag = false;
                     //if no of Misses is equal to 3, then game is over.
@@ -191,6 +198,7 @@ public class GameView extends SurfaceView implements Runnable {
         //checking for a collision between player and a friend
         if(Rect.intersects(player.getDetectCollision(),friend.getDetectCollision())){
 
+            Log.d("mydebug", "Friend Hit");
             //displaying the boom at the collision
             boom.setX(friend.getX());
             boom.setY(friend.getY());
@@ -245,6 +253,10 @@ public class GameView extends SurfaceView implements Runnable {
             //drawing the score on the game screen
             paint.setTextSize(30);
             canvas.drawText("Score:"+score,100,50,paint);
+
+            //drawing the score on the game screen
+            paint.setTextSize(30);
+            canvas.drawText("Misses:"+countMisses,800,50,paint);
 
             //Drawing the player, enemy, friends and boom
             canvas.drawBitmap(player.getBitmap(), player.getX(), player.getY(), paint);

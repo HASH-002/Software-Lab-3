@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -21,9 +21,6 @@ public class MainActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //setting the orientation to landscape
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-
         buttonPlay = findViewById(R.id.buttonPlay);
         buttonScore = findViewById(R.id.buttonScore);
 
@@ -31,13 +28,13 @@ public class MainActivity extends AppCompatActivity{
         buttonPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, HighScore.class));
+                startActivity(new Intent(MainActivity.this, GameActivity.class));
             }
         });
         buttonScore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, GameActivity.class));
+                startActivity(new Intent(MainActivity.this, HighScore.class));
             }
         });
     }

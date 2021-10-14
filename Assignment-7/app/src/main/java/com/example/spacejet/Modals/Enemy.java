@@ -11,6 +11,7 @@ import java.util.Random;
 
 public class Enemy {
 
+    private final int OUT_OF_SCREEN = 50000;
     //bitmap for the enemy
     //we have already pasted the bitmap in the drawable folder
     private Bitmap bitmap;
@@ -50,13 +51,13 @@ public class Enemy {
         //initializing rect object
         detectCollision = new Rect(x, y, bitmap.getWidth(), bitmap.getHeight());
     }
-
+    //x > minX - bitmap.getWidth() ||
     public void update(int playerSpeed) {
         //decreasing x coordinate so that enemy will move right to left
         x -= playerSpeed;
         x -= speed;
         //if the enemy reaches the left edge
-        if (x < minX - bitmap.getWidth()) {
+        if (x > OUT_OF_SCREEN) {
             //adding the enemy again to the right edge
             Random generator = new Random();
             speed = generator.nextInt(10) + 10;
