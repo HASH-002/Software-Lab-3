@@ -18,7 +18,6 @@ public class GameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
         //Getting display object
         Display display = getWindowManager().getDefaultDisplay();
 
@@ -29,8 +28,6 @@ public class GameActivity extends AppCompatActivity {
         //Initializing gameView object with screen size to the GameView constructor
         gameView = new GameView(this, size.x, size.y);
         setContentView(gameView);
-
-
     }
 
     //pausing the game when activity is paused

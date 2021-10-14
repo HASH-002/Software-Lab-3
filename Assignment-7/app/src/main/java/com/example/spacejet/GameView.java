@@ -26,6 +26,7 @@ import java.util.ArrayList;
 public class GameView extends SurfaceView implements Runnable {
 
     private final int OUT_OF_SCREEN = 100000;
+
     //boolean variable to track if the game is playing or not
     volatile boolean playing;
 
@@ -49,8 +50,8 @@ public class GameView extends SurfaceView implements Runnable {
 
     int screenX; //a screenX holder
     int countMisses;
-    boolean flag ; //indicator that the enemy has just entered the game screen
-    private boolean isGameOver ;
+    boolean flag; //indicator that the enemy has just entered the game screen
+    private boolean isGameOver;
 
     // Maintaining Scores
     int score;
@@ -78,7 +79,7 @@ public class GameView extends SurfaceView implements Runnable {
         stars = new ArrayList<Star>();
         int starNums = 100;
         for (int i = 0; i < starNums; i++) {
-            Star s  = new Star(screenX, screenY);
+            Star s = new Star(screenX, screenY);
             stars.add(s);
         }
 
@@ -89,18 +90,18 @@ public class GameView extends SurfaceView implements Runnable {
         //setting the score to 0 initially
         score = 0;
         highScore = new int[4];
-        sharedPreferences = context.getSharedPreferences("SHAR_PREF_NAME",Context.MODE_PRIVATE);
+        sharedPreferences = context.getSharedPreferences("SHAR_PREF_NAME", Context.MODE_PRIVATE);
 
         //initializing the array high scores with the previous values
-        highScore[0] = sharedPreferences.getInt("score1",0);
-        highScore[1] = sharedPreferences.getInt("score2",0);
-        highScore[2] = sharedPreferences.getInt("score3",0);
-        highScore[3] = sharedPreferences.getInt("score4",0);
+        highScore[0] = sharedPreferences.getInt("score1", 0);
+        highScore[1] = sharedPreferences.getInt("score2", 0);
+        highScore[2] = sharedPreferences.getInt("score3", 0);
+        highScore[3] = sharedPreferences.getInt("score4", 0);
 
         //initializing the media players for the game sounds and starting the game music as the game starts
-        gameOnSound = MediaPlayer.create(context,R.raw.gameon);
-        killedEnemySound = MediaPlayer.create(context,R.raw.killedenemy);
-        gameOverSound = MediaPlayer.create(context,R.raw.gameover);
+        gameOnSound = MediaPlayer.create(context, R.raw.gameon);
+        killedEnemySound = MediaPlayer.create(context, R.raw.killedenemy);
+        gameOverSound = MediaPlayer.create(context, R.raw.gameover);
         gameOnSound.start();
     }
 
@@ -127,7 +128,7 @@ public class GameView extends SurfaceView implements Runnable {
             s.update(player.getSpeed());
 
         //setting the flag true when the enemy just enters the screen
-        if(enemy.getX()==screenX)
+        if (enemy.getX() == screenX)
             flag = true;
 
         enemy.update(player.getSpeed());
@@ -142,25 +143,23 @@ public class GameView extends SurfaceView implements Runnable {
             killedEnemySound.start();
 
             enemy.setX(OUT_OF_SCREEN);
-
-            Log.d("mydebug", "Enemy Hit");
         }
         // the condition where player misses the enemy
-        else{
+        else {
 
             //if the enemy has just entered
-            if(flag){
+            if (flag) {
                 //if player's x coordinate is more than the enemy's x coordinate.i.e. enemy has just passed across the player
-                if(player.getDetectCollision().exactCenterX()>=enemy.getDetectCollision().exactCenterX()){
+                if (player.getDetectCollision().exactCenterX() >= enemy.getDetectCollision().exactCenterX()) {
 
                     //increment countMisses
                     countMisses++;
                     enemy.setX(OUT_OF_SCREEN);
-                    Log.d("mydebug", "Enemy missed");
+
                     //setting the flag false so that the else part is executed only when new enemy enters the screen
                     flag = false;
                     //if no of Misses is equal to 3, then game is over.
-                    if(countMisses==3){
+                    if (countMisses == 3) {
 
                         //setting playing false to stop the game.
                         playing = false;
@@ -172,8 +171,8 @@ public class GameView extends SurfaceView implements Runnable {
                         gameOverSound.start();
 
                         //Assigning the scores to the highscore integer array
-                        for(int i=0;i<4;i++){
-                            if(highScore[i]<score){
+                        for (int i = 0; i < 4; i++) {
+                            if (highScore[i] < score) {
                                 final int finalI = i;
                                 highScore[i] = score;
                                 break;
@@ -182,9 +181,9 @@ public class GameView extends SurfaceView implements Runnable {
 
                         //storing the scores through shared Preferences
                         SharedPreferences.Editor e = sharedPreferences.edit();
-                        for(int i=0;i<4;i++){
-                            int j = i+1;
-                            e.putInt("score"+j,highScore[i]);
+                        for (int i = 0; i < 4; i++) {
+                            int j = i + 1;
+                            e.putInt("score" + j, highScore[i]);
                         }
                         e.apply();
                     }
@@ -196,9 +195,8 @@ public class GameView extends SurfaceView implements Runnable {
         friend.update(player.getSpeed());
 
         //checking for a collision between player and a friend
-        if(Rect.intersects(player.getDetectCollision(),friend.getDetectCollision())){
+        if (Rect.intersects(player.getDetectCollision(), friend.getDetectCollision())) {
 
-            Log.d("mydebug", "Friend Hit");
             //displaying the boom at the collision
             boom.setX(friend.getX());
             boom.setY(friend.getY());
@@ -213,9 +211,9 @@ public class GameView extends SurfaceView implements Runnable {
             gameOverSound.start();
 
             //Assigning the scores to the highscore integer array
-            for(int i=0;i<4;i++){
+            for (int i = 0; i < 4; i++) {
 
-                if(highScore[i]<score){
+                if (highScore[i] < score) {
 
                     final int finalI = i;
                     highScore[i] = score;
@@ -225,10 +223,10 @@ public class GameView extends SurfaceView implements Runnable {
             //storing the scores through shared Preferences
             SharedPreferences.Editor e = sharedPreferences.edit();
 
-            for(int i=0;i<4;i++){
+            for (int i = 0; i < 4; i++) {
 
-                int j = i+1;
-                e.putInt("score"+j,highScore[i]);
+                int j = i + 1;
+                e.putInt("score" + j, highScore[i]);
             }
             e.apply();
         }
@@ -252,11 +250,11 @@ public class GameView extends SurfaceView implements Runnable {
 
             //drawing the score on the game screen
             paint.setTextSize(30);
-            canvas.drawText("Score:"+score,100,50,paint);
+            canvas.drawText("Score:" + score, 100, 50, paint);
 
             //drawing the score on the game screen
             paint.setTextSize(30);
-            canvas.drawText("Misses:"+countMisses,800,50,paint);
+            canvas.drawText("Misses:" + countMisses, 800, 50, paint);
 
             //Drawing the player, enemy, friends and boom
             canvas.drawBitmap(player.getBitmap(), player.getX(), player.getY(), paint);
@@ -265,12 +263,12 @@ public class GameView extends SurfaceView implements Runnable {
             canvas.drawBitmap(friend.getBitmap(), friend.getX(), friend.getY(), paint);
 
             //draw game Over when the game is over
-            if(isGameOver){
+            if (isGameOver) {
                 paint.setTextSize(150);
                 paint.setTextAlign(Paint.Align.CENTER);
 
-                int yPos=(int) ((canvas.getHeight() / 2) - ((paint.descent() + paint.ascent()) / 2));
-                canvas.drawText("Game Over",canvas.getWidth()/2,yPos,paint);
+                int yPos = (int) ((canvas.getHeight() / 2) - ((paint.descent() + paint.ascent()) / 2));
+                canvas.drawText("Game Over", canvas.getWidth() / 2, yPos, paint);
             }
 
             //Unlocking the canvas
@@ -313,15 +311,15 @@ public class GameView extends SurfaceView implements Runnable {
         }
 
         //Tapping on gameOver screen sends you to MainActivity
-        if(isGameOver){
-            if(motionEvent.getAction()==MotionEvent.ACTION_DOWN)
-                context.startActivity(new Intent(context,MainActivity.class));
+        if (isGameOver) {
+            if (motionEvent.getAction() == MotionEvent.ACTION_DOWN)
+                context.startActivity(new Intent(context, MainActivity.class));
         }
         return true;
     }
 
     //stop the music on exit
-    public static void stopMusic(){
+    public static void stopMusic() {
         gameOnSound.stop();
     }
 }
