@@ -3,17 +3,14 @@ package com.example.spacejet;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.ActivityInfo;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Rect;
 import android.media.MediaPlayer;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-import android.widget.Toast;
 
 import com.example.spacejet.Modals.Boom;
 import com.example.spacejet.Modals.Enemy;
@@ -22,6 +19,8 @@ import com.example.spacejet.Modals.Player;
 import com.example.spacejet.Modals.Star;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class GameView extends SurfaceView implements Runnable {
 
@@ -55,7 +54,7 @@ public class GameView extends SurfaceView implements Runnable {
 
     // Maintaining Scores
     int score;
-    int highScore[];
+    Integer highScore[];
     SharedPreferences sharedPreferences;
 
     //the mediaPlayer objects to configure the background music
@@ -89,7 +88,7 @@ public class GameView extends SurfaceView implements Runnable {
 
         //setting the score to 0 initially
         score = 0;
-        highScore = new int[4];
+        highScore = new Integer[5];
         sharedPreferences = context.getSharedPreferences("SHAR_PREF_NAME", Context.MODE_PRIVATE);
 
         //initializing the array high scores with the previous values
@@ -171,13 +170,8 @@ public class GameView extends SurfaceView implements Runnable {
                         gameOverSound.start();
 
                         //Assigning the scores to the highscore integer array
-                        for (int i = 0; i < 4; i++) {
-                            if (highScore[i] < score) {
-                                final int finalI = i;
-                                highScore[i] = score;
-                                break;
-                            }
-                        }
+                        highScore[4] = score;
+                        Arrays.sort(highScore, Collections.reverseOrder());
 
                         //storing the scores through shared Preferences
                         SharedPreferences.Editor e = sharedPreferences.edit();
@@ -211,15 +205,8 @@ public class GameView extends SurfaceView implements Runnable {
             gameOverSound.start();
 
             //Assigning the scores to the highscore integer array
-            for (int i = 0; i < 4; i++) {
-
-                if (highScore[i] < score) {
-
-                    final int finalI = i;
-                    highScore[i] = score;
-                    break;
-                }
-            }
+            highScore[4] = score;
+            Arrays.sort(highScore, Collections.reverseOrder());
             //storing the scores through shared Preferences
             SharedPreferences.Editor e = sharedPreferences.edit();
 
@@ -286,6 +273,7 @@ public class GameView extends SurfaceView implements Runnable {
 
     public void pause() {
         playing = false;
+        gameOnSound.pause();
         try {
             gameThread.join();
         } catch (InterruptedException e) {
@@ -294,6 +282,7 @@ public class GameView extends SurfaceView implements Runnable {
 
     public void resume() {
         playing = true;
+        gameOnSound.start();
         gameThread = new Thread(this);
         gameThread.start();
     }
